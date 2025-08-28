@@ -1,0 +1,8 @@
+
+   /* The HTML uses Tailwind CSS for most of the styling. */ */
+
+/* This class will be toggled by the JavaScript */
+.dom-highlight {
+    background-color: #e0f2fe; /* Light blue background */
+    border-color: #93c5fd; /* Light blue border */
+}

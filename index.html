@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First JavaScript Site</title>
+    <!-- I need to link the CSS file for styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- I found this online to make it look good, I'm not sure what it does though. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center font-sans">
+
+    <main class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-2xl space-y-8 my-8">
+
+        <header class="text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800">My JavaScript Assignment</h1>
+            <p class="text-gray-500 mt-2">Trying to figure out how this all works</p>
+        </header>
+
+        <!-- I'm starting with part 1 here -->
+        <section class="border-b pb-6 border-gray-200">
+            <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Part 1: The Basics 🎯</h2>
+            <div class="space-y-4">
+                <p id="greetingMessage" class="text-gray-700 text-lg">Type your name here and click the button!</p>
+                <input id="nameInput" type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all">
+                <button id="greetButton" class="w-full bg-indigo-500 text-white py-2 rounded-xl hover:bg-indigo-600 transition-colors duration-200 shadow-md">Click for a message!</button>
+            </div>
+        </section>
+
+        <!-- This section is for part 2, with the functions -->
+        <section class="border-b pb-6 border-gray-200">
+            <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Part 2: Functions ❤️</h2>
+            <div class="flex flex-col space-y-4">
+                <p class="text-gray-700">I need to calculate something with a function. This button will do it.</p>
+                <button id="calculateButton" class="w-full bg-purple-500 text-white py-2 rounded-xl hover:bg-purple-600 transition-colors duration-200 shadow-md">Show my calculation!</button>
+                <p id="totalResult" class="text-gray-800 font-medium text-center"></p>
+            </div>
+        </section>
+
+        <!-- I think this part is about the loops -->
+        <section class="border-b pb-6 border-gray-200">
+            <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Part 3: Loops 🔁</h2>
+            <div class="space-y-4">
+                <p class="text-gray-700">This button will make a list using a loop. It's supposed to repeat.</p>
+                <button id="generateListButton" class="w-full bg-green-500 text-white py-2 rounded-xl hover:bg-green-600 transition-colors duration-200 shadow-md">Make a list!</button>
+                <ul id="loopList" class="list-disc list-inside p-4 bg-gray-50 rounded-xl shadow-inner text-gray-700">
+                    <!-- The list items will go here -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- This is the last part, the DOM stuff -->
+        <section>
+            <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Part 4: The DOM 🌐</h2>
+            <div class="space-y-4">
+                <p id="domTarget" class="text-center text-lg p-4 rounded-xl transition-colors duration-500 border border-gray-300">I need to change this text with JavaScript.</p>
+                <button id="domButton" class="w-full bg-blue-500 text-white py-2 rounded-xl hover:bg-blue-600 transition-colors duration-200 shadow-md">Change it!</button>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Link to my JavaScript file at the end of the body. They said this was important. -->
+    <script src="script.js"></script>
+</body>
+</html>
